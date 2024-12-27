@@ -1,10 +1,7 @@
-let person = {
-    name: 'Neymer',
-    age: 34,
-    isPlayer: true
+let myFunc: Function;
+
+myFunc = () => {
+    console.log(123456)
 }
 
-person.name = 'junior'
-person.age = 32
-
-console.log(person)
+myFunc()
