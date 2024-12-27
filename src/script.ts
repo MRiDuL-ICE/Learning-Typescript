@@ -1,7 +1,11 @@
-let myFunc: Function;
+type stringOrNum = number | string;
+type userType = { name: string, age: number }
 
-myFunc = () => {
-    console.log(123456)
+
+const userDetails = (id: stringOrNum, user: userType) => {
+    console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`)
 }
 
-myFunc()
+const sayHello = (user: userType) => {
+    console.log(`Hello ${user.age > 50 ? 'sir' : 'Mr.'} ${user.name}`)
+}
