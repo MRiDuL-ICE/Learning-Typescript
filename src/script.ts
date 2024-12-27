@@ -1,7 +1,10 @@
-{
-    const country: string = "Bangladesh is in my heart"
-    const number: number = 10
-    const boo: boolean = !true
-
-    console.log(country, number, boo)
+let person = {
+    name: 'Neymer',
+    age: 34,
+    isPlayer: true
 }
+
+person.name = 'junior'
+person.age = 32
+
+console.log(person)
