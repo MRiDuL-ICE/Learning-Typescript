@@ -40,13 +40,15 @@ class Player {
         this.age = a;
         this.country = c;
     }
-    plaY() {
+    play() {
         console.log(`${this.name} from ${this.country} and age is ${this.age}`);
     }
 }
 const neymar = new Player('Neymar', 34, 'Brazil');
 const rodrygo = new Player('Rodrygo Goes', 21, 'Brazil');
 const vini = new Player('Vinicious Jr.', 22, 'Brazil');
+neymar.name = 'Neymer Jr.';
+console.log(neymar.name);
 const players = [];
 players.push(neymar);
 players.push(rodrygo);

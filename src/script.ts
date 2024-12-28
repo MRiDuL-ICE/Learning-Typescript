@@ -61,9 +61,9 @@ userInfo = (id: string | number, user: {
 // typescript classes
 
 class Player {
-    name: string;
-    age: number;
-    country: string;
+    private name: string;
+    private age: number;
+    private country: string;
 
     constructor(n: string, a: number, c: string) {
         this.name = n;
@@ -71,7 +71,7 @@ class Player {
         this.country = c;
     }
 
-    plaY() {
+    play() {
         console.log(`${this.name} from ${this.country} and age is ${this.age}`)
     }
 }
@@ -81,6 +81,8 @@ const neymar = new Player('Neymar', 34, 'Brazil')
 const rodrygo = new Player('Rodrygo Goes', 21, 'Brazil')
 const vini = new Player('Vinicious Jr.', 22, 'Brazil')
 
+neymar.name = 'Neymer Jr.'
+console.log(neymar.name)
 
 const players: Player[] = []
 
