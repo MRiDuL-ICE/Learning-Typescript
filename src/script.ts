@@ -43,3 +43,49 @@ calculation = (a: number, b: number, c: string) => {
 
 
 console.log(calculation(10, 5, 'substraction'))
+
+
+let userInfo: (id: string | number, user: {
+    name: string,
+    age: number
+}) => void
+
+userInfo = (id: string | number, user: {
+    name: string,
+    age: number
+}) => {
+    console.log(`${id} and ${user}`)
+}
+
+
+// typescript classes
+
+class Player {
+    name: string;
+    age: number;
+    country: string;
+
+    constructor(n: string, a: number, c: string) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+
+    plaY() {
+        console.log(`${this.name} from ${this.country} and age is ${this.age}`)
+    }
+}
+
+
+const neymar = new Player('Neymar', 34, 'Brazil')
+const rodrygo = new Player('Rodrygo Goes', 21, 'Brazil')
+const vini = new Player('Vinicious Jr.', 22, 'Brazil')
+
+
+const players: Player[] = []
+
+players.push(neymar)
+players.push(rodrygo)
+players.push(vini)
+
+console.log(players)
