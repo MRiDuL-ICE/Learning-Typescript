@@ -1,4 +1,4 @@
-"use strict";
+import { Player } from "./classes/Player.js";
 const userDetails = (id, user) => {
     console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
 };
@@ -34,21 +34,9 @@ userInfo = (id, user) => {
     console.log(`${id} and ${user}`);
 };
 // typescript classes
-class Player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
-    play() {
-        console.log(`${this.name} from ${this.country} and age is ${this.age}`);
-    }
-}
 const neymar = new Player('Neymar', 34, 'Brazil');
 const rodrygo = new Player('Rodrygo Goes', 21, 'Brazil');
 const vini = new Player('Vinicious Jr.', 22, 'Brazil');
-neymar.name = 'Neymer Jr.';
-console.log(neymar.name);
 const players = [];
 players.push(neymar);
 players.push(rodrygo);
