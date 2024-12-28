@@ -1,4 +1,5 @@
 import { Player } from "./classes/Player.js";
+import { isPlayer } from "./interfaces/isPlayer.js";
 
 // type aliases
 type stringOrNum = number | string;
@@ -64,16 +65,36 @@ userInfo = (id: string | number, user: {
 
 
 
-
-const neymar = new Player('Neymar', 34, 'Brazil')
+let neymar: isPlayer;
+neymar = new Player('Neymar', 34, 'Brazil')
 const rodrygo = new Player('Rodrygo Goes', 21, 'Brazil')
 const vini = new Player('Vinicious Jr.', 22, 'Brazil')
 
 
-const players: Player[] = []
+const players: isPlayer[] = []
 
 players.push(neymar)
 players.push(rodrygo)
 players.push(vini)
 
 console.log(players)
+
+
+// interfaces of typescript
+
+interface ReactangleOptions {
+    width: number;
+    length: number;
+}
+
+function drawRectangle(options: ReactangleOptions) {
+    let width = options.width
+    let length = options.length
+
+    return width + length
+}
+
+console.log(drawRectangle({
+    width: 25,
+    length: 25
+}))

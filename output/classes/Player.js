@@ -4,6 +4,9 @@ export class Player {
         this.age = a;
         this.country = c;
     }
+    getAge() {
+        return this.age;
+    }
     play() {
         console.log(`${this.name} from ${this.country} and age is ${this.age}`);
     }

@@ -34,7 +34,8 @@ userInfo = (id, user) => {
     console.log(`${id} and ${user}`);
 };
 // typescript classes
-const neymar = new Player('Neymar', 34, 'Brazil');
+let neymar;
+neymar = new Player('Neymar', 34, 'Brazil');
 const rodrygo = new Player('Rodrygo Goes', 21, 'Brazil');
 const vini = new Player('Vinicious Jr.', 22, 'Brazil');
 const players = [];
@@ -42,3 +43,12 @@ players.push(neymar);
 players.push(rodrygo);
 players.push(vini);
 console.log(players);
+function drawRectangle(options) {
+    let width = options.width;
+    let length = options.length;
+    return width + length;
+}
+console.log(drawRectangle({
+    width: 25,
+    length: 25
+}));
