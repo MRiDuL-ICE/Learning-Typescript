@@ -66,7 +66,7 @@ userInfo = (id: string | number, user: {
 
 
 let neymar: isPlayer;
-neymar = new Player('Neymar', 34, 'Brazil')
+neymar = new Player('Neymar junior', 34, 'Brazil')
 const rodrygo = new Player('Rodrygo Goes', 21, 'Brazil')
 const vini = new Player('Vinicious Junior.', 22, 'Brazil')
 
