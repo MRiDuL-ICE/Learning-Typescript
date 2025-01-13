@@ -11,7 +11,7 @@ const userDetails = (id: stringOrNum, user: userType) => {
 }
 
 const sayHello = (user: userType) => {
-    console.log(`Hello ${user.age > 50 ? 'sir' : 'Mr.'} ${user.name}`)
+    console.log(`Hello dear ${user.age > 50 ? 'sir' : 'Mr.'} ${user.name}`)
 }
 
 
